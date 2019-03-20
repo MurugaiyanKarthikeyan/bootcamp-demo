@@ -13,4 +13,5 @@ variables:
   imageName: 'shashankbarsin/bootcamp-demo:$(build.buildId)'
 
 steps:
-- script: echo KarthiIlakkiya
+- script: cd app
+- script: docker build -t karthii-lakkiya:dev .
