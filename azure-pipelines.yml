@@ -18,5 +18,5 @@ steps:
   displayName: Container registry login
   inputs:
     command: login
-    azureSubcrioptionEndpoint: demo123
+    azureSubscriptionEndpoint: demo123
     azureContainerRegistry: devkarthiilakkiya.azurecr.io
