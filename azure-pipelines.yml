@@ -26,3 +26,10 @@ steps:
     command: build
     dockerFile: app/Dockerfile
     imageName: $(imageName)
+- task: Docker@1
+  displayName: Push image
+  inputs:
+    command: push
+    containerregistrytype: Container Registry
+    dockerRegistryEndpoint: dockerHub
+    imageName: $(imageName)
