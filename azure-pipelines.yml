@@ -14,3 +14,9 @@ variables:
 
 steps:
 - script: docker build -t karthi-lakkiya:dev ./app
+- task: Docker@1
+  displayName: Container registry login
+  inputs:
+    command: login
+    azureSubcrioptionEndpoint: demo123
+    azureContainerRegistry: devkarthiilakkiya.azurecr.io
